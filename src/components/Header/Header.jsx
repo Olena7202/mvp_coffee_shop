@@ -7,11 +7,7 @@ export default function Header() {
 
   return (
     <header className="header">
-<<<<<<< HEAD
-      <div className="logo">☕ Coffee Shop</div>
-=======
-      <div className="logo">☕ Coffee Shop</div>
->>>>>>> feature/initial-layout
+      <div className="logo">☕ Coffee Shop (feature/initial-layout)</div>
       <nav className="nav">
         <Link className={isActive("/") ? "active" : ""} to="/">Головна</Link>
         <Link className={isActive("/catalog") ? "active" : ""} to="/catalog">Каталог</Link>
