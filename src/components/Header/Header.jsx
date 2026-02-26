@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <p className="logo">Coffee Shop (feature) </p> {/* без іконки */} 
+      <div className="logo">☕ Coffee Shop (feature)</div>
       <nav className="nav">
         <Link className={isActive("/") ? "active" : ""} to="/">Головна</Link>
         <Link className={isActive("/catalog") ? "active" : ""} to="/catalog">Каталог</Link>
