@@ -1,0 +1,53 @@
+.why-us {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1d1d1d, #101010); /* той самий темний фон */
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 1430px;
+  color: #fff; /* світлий текст */
+}
+
+.why-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #e6c089; /* золотистий акцент */
+}
+
+.why-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: rgba(255,255,255,0.05); /* напівпрозорий блок на темному фоні */
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1); /* іконки світлі на темному фоні */
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c59d5f; /* золотистий акцент */
+}
+
+.why-card p {
+  font-size: 16px;
+  color: #ddd;
+}

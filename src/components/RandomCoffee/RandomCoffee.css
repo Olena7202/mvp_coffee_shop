@@ -1,0 +1,64 @@
+.random-coffee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("/coffee_day.png"); /* світліший фонова картинка */
+  background-size: cover;
+  background-position: center;
+  color: #111; /* темний текст на світлому фоні */
+  border-radius: 12px;
+  padding: 50px;
+  max-width: 1370px;
+  margin: 50px auto;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+}
+
+.coffee-info {
+  flex: 1;
+  padding-right: 40px;
+  /* прибрали чорний квадрат */
+  padding: 20px;
+}
+
+.coffee-title {
+  font-size: 20px;
+  color: #c59d5f; /* золотистий акцент */
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.coffee-name {
+  font-size: 30px;
+  margin: 14px 0;
+}
+
+.coffee-description {
+  font-size: 17px;
+  color: #fff; /* темніший текст */
+  margin-bottom: 12px;
+}
+
+.coffee-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a67c52;
+  margin-bottom: 25px;
+}
+
+.coffee-button {
+  font-size: 1rem;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(197, 157, 95, 0.6);
+  background: #c59d5f;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.coffee-button:hover {
+  background: #a67c52;
+  color: #fff;
+  transform: translateY(-2px);
+}

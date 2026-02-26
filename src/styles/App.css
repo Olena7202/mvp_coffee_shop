@@ -1,0 +1,35 @@
+/* Базові стилі для всього сайту */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;          /* padding прибрано, щоб весь layout був контрольований flex */
+  background-color: #111; /* темний фон сайту */
+  color: #f5f5f5;        /* світлий текст */
+}
+
+/* Контейнер для App, щоб футер завжди був внизу */
+.AppWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Контент сторінок займає весь простір між header і footer */
+.content {
+  flex: 1;
+  padding: 20px;        /* внутрішні відступи для сторінки */
+}
+
+/* Header */
+header {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  color: gray;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}

@@ -1,0 +1,62 @@
+/* Hero секція */
+.home {
+  position: relative;
+  height: 45vh;
+  background-image: url("/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+/* затемнення */
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* щоб контент був поверх затемнення */
+.hero-content {
+  position: relative;          /* ВАЖЛИВО */
+  margin-left: 80px;
+  max-width: 520px;
+  color: white;
+  z-index: 1;
+}
+
+/* Заголовок */
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Кнопки */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* КНОПКИ HERO */
+.hero-btn {
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 8px;
+  border: 1px solid rgba(197, 157, 95, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  color: #e6c089;
+  cursor: pointer;
+  transition: 0.3s ease;
+  backdrop-filter: blur(3px);
+}
+
+.hero-btn:hover {
+  background: #c59d5f;
+  color: #111;
+  transform: translateY(-1px);
+}
