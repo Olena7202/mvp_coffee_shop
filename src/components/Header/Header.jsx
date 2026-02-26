@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">☕ Coffee Shop (develop ) !</div>
+      <div className="logo">☕ Coffee Shop (develop)</div>
       <nav className="nav">
         <Link className={isActive("/") ? "active" : ""} to="/">Головна</Link>
         <Link className={isActive("/catalog") ? "active" : ""} to="/catalog">Каталог</Link>
