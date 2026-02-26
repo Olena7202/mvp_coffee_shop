@@ -7,12 +7,12 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">Coffee Shop(feature)</div> {/* без іконки */} 
+      <p className="logo">Coffee Shop (feature) </p> {/* без іконки */} 
       <nav className="nav">
         <Link className={isActive("/") ? "active" : ""} to="/">Головна</Link>
         <Link className={isActive("/catalog") ? "active" : ""} to="/catalog">Каталог</Link>
         <Link className={isActive("/cart") ? "active" : ""} to="/cart">Кошик</Link>
-      </nas>
+      </nav>
     </header>
   );
 }
