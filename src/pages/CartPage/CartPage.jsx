@@ -1,12 +1,6 @@
 import "./CartPage.css";
-import { useState } from "react";
-import { products } from "../../data/product";
 
-export default function CartPage() {
-  // для прикладу — кошик з одним продуктом
-  const [cartItems, setCartItems] = useState([
-    { ...products[0], quantity: 1 }
-  ]);
+export default function CartPage({ cartItems, setCartItems }) {
 
   const handleRemove = (id) => {
     setCartItems(cartItems.filter(item => item.id !== id));
