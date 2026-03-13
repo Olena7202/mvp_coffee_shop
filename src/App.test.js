@@ -1,4 +1,4 @@
-/* eslint-env jest */
+
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
@@ -114,7 +114,7 @@ test("CartPage decreases item quantity", () => {
 test("CartPage shows total price", () => {
   const items = [
     { id: 1, name: "Latte", price: 60, quantity: 1, image: "latte.jpg" },
-    { id: 2, name: "Espresso", price: 50, quantity: 2, image: "espresso.jpg" },
+    { id: 2, name: "Americano", price: 50, quantity: 2, image: "espresso.jpg" },
   ];
   render(<CartPage cartItems={items} setCartItems={() => {}} />);
   expect(screen.getByText(/Разом:\s*160\s*грн/)).toBeInTheDocument();
