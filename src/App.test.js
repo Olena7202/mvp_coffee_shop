@@ -8,7 +8,6 @@ import RandomCoffee from "./components/RandomCoffee/RandomCoffee";
 import WhyUs from "./components/WhyUs/WhyUs";
 import CartPage from "./pages/CartPage/CartPage";
 
-// ---------- Header ----------
 test("Header renders logo", () => {
   render(
     <MemoryRouter>
@@ -36,7 +35,6 @@ test("Header does not highlight Catalog link when on /", () => {
   expect(screen.getByText("Каталог")).not.toHaveClass("active");
 });
 
-// ---------- ProductCard ----------
 const product = {
   id: 1,
   name: "Espresso",
@@ -58,7 +56,6 @@ test("ProductCard calls addToCart on click", () => {
   expect(mockAdd).toHaveBeenCalledWith(product);
 });
 
-// ---------- RandomCoffee ----------
 test("RandomCoffee renders coffee of the day", () => {
   const coffee = { name: "Cappuccino", description: "Foamy", price: 70 };
   render(<RandomCoffee coffee={coffee} />);
@@ -66,7 +63,6 @@ test("RandomCoffee renders coffee of the day", () => {
   expect(screen.getByText("Cappuccino")).toBeInTheDocument();
 });
 
-// ---------- WhyUs ----------
 test("WhyUs renders reasons", () => {
   render(<WhyUs />);
   expect(screen.getByText("Свіже обсмаження")).toBeInTheDocument();
@@ -74,7 +70,6 @@ test("WhyUs renders reasons", () => {
   expect(screen.getByText("Натуральні зерна")).toBeInTheDocument();
 });
 
-// ---------- CartPage ----------
 test("CartPage shows empty cart message", () => {
   render(<CartPage cartItems={[]} setCartItems={() => {}} />);
   expect(screen.getByText("Ваш кошик порожній")).toBeInTheDocument();
