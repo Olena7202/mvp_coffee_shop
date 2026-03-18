@@ -49,7 +49,7 @@ export default function Home({ addToCart }) {
         <h2>Наші топові пропозиції</h2>
         <ProductList
           products={topProducts.slice(0, 4)}
-          addToCart={addToCart} // тепер працює
+          addToCart={addToCart} 
         />
       </section>
 

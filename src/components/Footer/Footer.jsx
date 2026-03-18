@@ -1,25 +1,35 @@
 import "./Footer.css";
 
+const status = import.meta.env.VITE_APP_STATUS;
+
 export default function Footer() {
-   return (
+  return (
     <footer className="footer">
-        <div className="footer-top">
-        <div className="logo">CoffeShop</div>
+      <div className="footer-top">
+
+        <div className="logo">CoffeeShop</div>
+
         <div className="contacts">
-            <p>+38 099 123 45 67</p>
-            <p>info@coffeeshop.ua</p>
+          <p>+38 099 123 45 67</p>
+          <p>info@coffeeshop.ua</p>
         </div>
+
         <div className="socials">
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">Telegram</a>
+          <a href="#" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#" target="_blank" rel="noreferrer">Telegram</a>
         </div>
-       </div>
-       <div className="footer-bottom">
+
+      </div>
+
+      <div className="footer-bottom">
         © 2026 Coffee Shop. Всі права захищені.
       </div>
+
+      <div className="app-status">
+        App status: {status}
+      </div>
+
     </footer>
-)
-
+  );
 }
-

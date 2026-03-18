@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">☕ Coffee Shop</div>
+      <div className="logo">Coffee Shop</div>
       <nav className="nav">
         <Link className={isActive("/") ? "active" : ""} to="/">Головна</Link>
         <Link className={isActive("/catalog") ? "active" : ""} to="/catalog">Каталог</Link>
@@ -15,4 +15,5 @@ export default function Header() {
       </nav>
     </header>
   );
+
 }
