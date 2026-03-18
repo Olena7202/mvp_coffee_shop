@@ -14,7 +14,7 @@ test("Header renders logo", () => {
       <Header />
     </MemoryRouter>
   );
-  expect(screen.getByText("☕ Coffee Shop")).toBeInTheDocument();
+  expect(screen.getByText("Coffee Shop")).toBeInTheDocument();
 });
 
 test("Header highlights Catalog link when on /catalog", () => {
