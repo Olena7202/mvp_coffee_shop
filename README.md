@@ -1,5 +1,8 @@
 # CoffeeHouse ☕️
+[![CI](https://github.com/Olena7202/mvp_coffee_shop/actions/workflows/main.yml/badge.svg)]
+(https://github.com/Olena7202/mvp_coffee_shop/actions/workflows/main.yml)
 
+Подивитися сайт: [https://github.com/Olena7202/mvp_coffee_shop]
 React + Vite проєкт для кавового сайту з каталогом, кошиком та промо‑секціями.
 
 ## 📌 Що ми зробили
